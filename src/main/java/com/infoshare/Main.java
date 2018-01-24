@@ -21,7 +21,9 @@ public class Main {
 
         System.out.println(menu1.getZ());
 
-        System.out.println(menu1.city1);
+        menu1.setCity1(Cities.GDAŃSK);
+
+        System.out.println(menu1.getCity());
     }
 }
 
