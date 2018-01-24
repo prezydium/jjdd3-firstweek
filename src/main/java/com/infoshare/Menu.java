@@ -2,16 +2,15 @@ package com.infoshare;
 
 public class Menu {
 
-   private int number;
-
-   private String text;
-
+    Cities city;
+    private int number;
+    private String text;
     private int x;
-
     private Integer z;
 
-    Cities city;
-
+    public static void staticMethod() {
+        System.out.println("This is static method!");
+    }
 
     public Cities getCity() {
         return city;
@@ -23,6 +22,10 @@ public class Menu {
 
     public int getNumber() {
         return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public int getX() {
@@ -41,20 +44,12 @@ public class Menu {
         this.z = z;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     public String getText() {
         return text;
     }
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public static void staticMethod() {
-        System.out.println("This is static method!");
     }
 
     public void nonStaticMethod() {
@@ -75,15 +70,16 @@ public class Menu {
         }
     }
 
-    public void setCityByNumber(){
-        if (number == 1) {
-            this.city = Cities.GDAŃSK;
-        }
-         else if (number == 2){
-             this.city = Cities.SOPOT;
-        }
-        else {
-            this.city = Cities.GDYNIA;
+    public void setCityByNumber() {
+        switch (number) {
+            case 1:
+                this.city = Cities.GDAŃSK;
+                break;
+            case 2:
+                this.city = Cities.SOPOT;
+                break;
+            case 3:
+                this.city = Cities.GDYNIA;
         }
 
     }
