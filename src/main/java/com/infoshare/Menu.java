@@ -2,40 +2,68 @@ package com.infoshare;
 
 public class Menu {
 
-    int number;
+   private int number;
 
-    String text;
+   private String text;
 
-    Menu(){
+    private int x;
 
+    private Integer z;
+
+    Cities city1;
+            //= Cities.GDAŃSK;
+
+    public int getNumber() {
+        return number;
     }
 
+    public int getX() {
+        return x;
+    }
 
-    Menu(int number, String text){
+    public void setX(int x) {
+        this.x = x;
+    }
 
+    public Integer getZ() {
+        return z;
+    }
+
+    public void setZ(Integer z) {
+        this.z = z;
+    }
+
+    public void setNumber(int number) {
         this.number = number;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
         this.text = text;
     }
 
-    public static void staticMethod(){
+    public static void staticMethod() {
         System.out.println("This is static method!");
     }
 
-    public void nonStaticMethod(){
+    public void nonStaticMethod() {
         System.out.println("This is non static method!");
     }
 
 
-    public void showParams(){
-            System.out.println("*" + number + " - " + text + "*");
+    public void showParams() {
+        System.out.println("*" + number + " - " + text + "*");
 
     }
 
-    public void checkText(){
+    public void checkText() {
         try {
             System.out.println(text.getClass());
-        }   catch (NullPointerException e){
-        System.out.println("No text!");
+        } catch (NullPointerException e) {
+            System.out.println("No text!");
         }
     }
 }
