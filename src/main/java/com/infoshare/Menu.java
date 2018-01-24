@@ -10,8 +10,16 @@ public class Menu {
 
     private Integer z;
 
-    Cities city1;
-            //= Cities.GDAŃSK;
+    Cities city;
+
+
+    public Cities getCity() {
+        return city;
+    }
+
+    public void setCity(Cities city) {
+        this.city = city;
+    }
 
     public int getNumber() {
         return number;
@@ -66,4 +74,18 @@ public class Menu {
             System.out.println("No text!");
         }
     }
+
+    public void setCityByNumber(){
+        if (number == 1) {
+            this.city = Cities.GDAŃSK;
+        }
+         else if (number == 2){
+             this.city = Cities.SOPOT;
+        }
+        else {
+            this.city = Cities.GDYNIA;
+        }
+
+    }
+
 }
