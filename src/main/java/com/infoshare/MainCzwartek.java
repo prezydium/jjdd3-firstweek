@@ -1,7 +1,8 @@
 package com.infoshare;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+
+import static java.lang.Thread.sleep;
 
 public class MainCzwartek {
 
@@ -11,9 +12,40 @@ public class MainCzwartek {
        // equalsTests();
        // stringText();
         //createArray(8);
-        setsExercises();
+        //setsExercises();
+        binary();
     }
 
+    //10 =     1010
+
+    public static void binary(){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        String wynik = MainCzwartek.getBinary(a);
+        System.out.println(wynik);
+
+
+
+
+    }
+
+    public static String getBinary(int a){
+        String result ="";
+        StringBuilder sb = new StringBuilder();
+        while (a!=0){
+            if ((a % 2) != 0){
+                sb.append("1");
+                a = a/2;
+                } else{
+                sb.append("0");
+                a = a/2;
+            }
+
+        }
+        sb = sb.reverse();
+        result = sb.toString();
+        return result;
+    }
 
 
     public static void setsExercises(){
@@ -24,7 +56,7 @@ public class MainCzwartek {
         String d = "Obrońców Wybrzeża";
         String e = "Kołobrzeska";
 
-        Set<String> ulice = new HashSet<String>();
+        List<String> ulice = new ArrayList<String>();
         ulice.add(a);
         ulice.add(b);
         ulice.add(c);
@@ -33,6 +65,12 @@ public class MainCzwartek {
 
         for (String nazwa : ulice) {
             System.out.println(nazwa);
+            System.out.println(nazwa.hashCode());
+            try {
+                sleep(1000);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
         }
     }
 
