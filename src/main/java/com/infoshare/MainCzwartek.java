@@ -1,13 +1,63 @@
 package com.infoshare;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class MainCzwartek {
 
     public static void main(String[] args) {
         // exercise1();
         // exercise2(8);
        // equalsTests();
-        stringText();
+       // stringText();
+        //createArray(8);
+        setsExercises();
     }
+
+
+
+    public static void setsExercises(){
+
+        String a = "Piastowska";
+        String b = "Jagiellońska";
+        String c = "Jagiellońska";
+        String d = "Obrońców Wybrzeża";
+        String e = "Kołobrzeska";
+
+        Set<String> ulice = new HashSet<String>();
+        ulice.add(a);
+        ulice.add(b);
+        ulice.add(c);
+        ulice.add(d);
+        ulice.add(e);
+
+        for (String nazwa : ulice) {
+            System.out.println(nazwa);
+        }
+    }
+
+
+
+
+
+
+
+    public static void createArray(int x){
+        int[] table = new int[10];
+        table[0] = x;
+        for (int i = 1; i<table.length; i++ ){
+            table[i] = table [i-1] +1 ;
+        }
+
+        for (int e: table) {
+            System.out.println(e + " ");
+        }
+    }
+
+
+
+
+
 
 
 public static void stringText(){
