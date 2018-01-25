@@ -14,38 +14,19 @@ public class MainCzwartek {
         //createArray(8);
         //setsExercises();
         //binary();
-        przedzialy();
+        Pizza pizzaMala = new Pizza(32, 19);
+        Pizza pizzaDuza = new Pizza(65, 45.9);
+
+        System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
+        System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
+        System.out.println("Mniejsza wartość = lepiej!");
+
+       // Przedzialy exercise = new Przedzialy();
+       // exercise.przedzialy();
     }
-/*
-ćwiczenie 2 (przedziały)
--  pobierz z klawiatury 3 parametry, ilość liczb (x), ilość przedziałów (y), zakres liczb (z)
-- stwórz y równych przedziałów dla zakresu z
-   np.  zakres z = 100, przedziały y = 5  ->  czyli tworzymy 5 przedziałów (np. list)  0-20, 21-40, 41-60, 61-80, 81-100
--  wygeneruj losowo x liczb z zakresu 0 - z i przypisz ją do odpowiedniego przedziału (pojemnika)
-  np. wylosowana liczba 25 -> wpada do pojemnika 2 (przedział 21-40)
-- wyświetl ilość liczb w każdym przedziale
-*/
-
-    public static void przedzialy(){
-        int iloscliczb, iloscprzedzialow, zakres, a, liczba;
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Podaj ilość liczb: ");
-        iloscliczb = sc.nextInt();
-        System.out.println("Podaj ilość przedziałów");
-        iloscprzedzialow = sc.nextInt();
-        System.out.println("Podaj zakres liczb");
-        zakres = sc.nextInt();
-        liczba = 3;
-       a = zakres / iloscprzedzialow;
-        System.out.println(a);
-
-        if (liczba < zakres / iloscprzedzialow){
-            
-        }
 
 
-    }
+
 
 
 
@@ -172,7 +153,7 @@ public class MainCzwartek {
     }
 
 
-    public static void exercise1() {
+   /* public static void exercise1() {
         Menu menu1 = new Menu();
         menu1.setNumber(-99);
         menu1.check(false, 5);
@@ -189,6 +170,6 @@ public class MainCzwartek {
         menu1.check(true, 10);
         System.out.println("menu1 number: " + menu1.getNumber());
     }
-
+*/
 
 }
