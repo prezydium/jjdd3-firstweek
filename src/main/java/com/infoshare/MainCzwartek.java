@@ -33,9 +33,8 @@ public class MainCzwartek {
         people.add(person3);
         people.add(person4);
         people.add(person5);
-        for (Person p: people) {
-            System.out.println(p);
-        }
+
+
         Collections.sort(people);
 
         for (Person p: people) {

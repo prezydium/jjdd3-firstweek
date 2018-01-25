@@ -1,9 +1,7 @@
 package com.infoshare;
 
 
-import java.util.*;
-
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person> {
     String name;
     String surname;
     String nick;
@@ -14,10 +12,12 @@ public class Person implements Comparable<Person>{
         this.nick = nick;
     }
 
-    public int comparator(String surname){
+    public int comparator(String surname) {
         int compare = surname.compareTo(surname);
         return compare;
-    };
+    }
+
+    ;
 
     @Override
     public int compareTo(Person o) {
@@ -30,11 +30,5 @@ public class Person implements Comparable<Person>{
         return (surname + " " + name + " \"" + nick + "\"");
     }
 
-    /*
-    public List<Person> sort(List<Person> list){
-        Collections.sort(list, comparator(surname));
 
-        return list;
-
-    }*/
 }
