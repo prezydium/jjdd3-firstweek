@@ -14,18 +14,44 @@ public class MainCzwartek {
         //createArray(8);
         //setsExercises();
         //binary();
-        Pizza pizzaMala = new Pizza(32, 19);
-        Pizza pizzaDuza = new Pizza(65, 45.9);
-
-        System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
-        System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
-        System.out.println("Mniejsza wartość = lepiej!");
+        //pizzaExercise();
 
        // Przedzialy exercise = new Przedzialy();
        // exercise.przedzialy();
+        personExercise();
     }
 
+    public static void personExercise(){
+        Person person1 = new Person("John", "Smith", "click");
+        Person person2 = new Person("Zbigniew", "Brzęczyszczykiewicz", "Brzęczu");
+        Person person3 = new Person("Anna", "Walik", "Val");
+        Person person4 = new Person("James", "Bond", "007");
+        Person person5 = new Person("Marie", "Ann", "Nix");
+        List<Person> people= new ArrayList<Person>();
+        people.add(person1);
+        people.add(person2);
+        people.add(person3);
+        people.add(person4);
+        people.add(person5);
+        for (Person p: people) {
+            System.out.println(p);
+        }
+        Collections.sort(people);
 
+        for (Person p: people) {
+            System.out.println(p);
+        }
+    }
+
+public static void pizzaExercise(){
+     Pizza pizzaMala = new Pizza(32, 19);
+    Pizza pizzaDuza = new Pizza(65, 45.9);
+
+    System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
+    System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
+      System.out.println("Mniejsza wartość = lepiej!");
+
+}
 
 
 
