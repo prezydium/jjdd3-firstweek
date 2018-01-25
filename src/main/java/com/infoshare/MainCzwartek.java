@@ -9,36 +9,33 @@ public class MainCzwartek {
     public static void main(String[] args) {
         // exercise1();
         // exercise2(8);
-       // equalsTests();
-       // stringText();
+        // equalsTests();
+        // stringText();
         //createArray(8);
         //setsExercises();
         binary();
     }
+    
 
-    //10 =     1010
-
-    public static void binary(){
+    public static void binary() {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         String wynik = MainCzwartek.getBinary(a);
         System.out.println(wynik);
 
 
-
-
     }
 
-    public static String getBinary(int a){
-        String result ="";
+    public static String getBinary(int a) {
+        String result = "";
         StringBuilder sb = new StringBuilder();
-        while (a!=0){
-            if ((a % 2) != 0){
+        while (a != 0) {
+            if ((a % 2) != 0) {
                 sb.append("1");
-                a = a/2;
-                } else{
+                a = a / 2;
+            } else {
                 sb.append("0");
-                a = a/2;
+                a = a / 2;
             }
 
         }
@@ -48,7 +45,7 @@ public class MainCzwartek {
     }
 
 
-    public static void setsExercises(){
+    public static void setsExercises() {
 
         String a = "Piastowska";
         String b = "Jagiellońska";
@@ -75,41 +72,24 @@ public class MainCzwartek {
     }
 
 
-
-
-
-
-
-    public static void createArray(int x){
+    public static void createArray(int x) {
         int[] table = new int[10];
         table[0] = x;
-        for (int i = 1; i<table.length; i++ ){
-            table[i] = table [i-1] +1 ;
+        for (int i = 1; i < table.length; i++) {
+            table[i] = table[i - 1] + 1;
         }
 
-        for (int e: table) {
+        for (int e : table) {
             System.out.println(e + " ");
         }
     }
 
 
-
-
-
-
-
-public static void stringText(){
+    public static void stringText() {
         String s = "test:test::test";
         String[] arr = s.split(":");
 
-}
-
-
-
-
-
-
-
+    }
 
 
     public static void exercise2(int x) {
