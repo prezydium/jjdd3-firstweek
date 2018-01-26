@@ -1,5 +1,6 @@
 package com.infoshare;
 
+import java.io.FileReader;
 import java.util.*;
 
 import static java.lang.Thread.sleep;
@@ -26,7 +27,13 @@ public class MainCzwartek {
         //arrayExercise(10);
         //mapExercise();
         //exceptionsExercise();
-        extendsExercise();
+
+        //extendsExercise();
+        Friday friday = new Friday();
+        friday.exercise1();
+    }
+    public void costam(){
+        System.out.println("hi");
     }
 
     public static void extendsExercise(){

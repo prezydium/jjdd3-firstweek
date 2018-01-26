@@ -27,8 +27,8 @@ public class Lotto {
                 wylosowana = (int) ((Math.random() * zakres) + 1);
             } while (trafione.contains(wylosowana));
             trafione.add(wylosowana);
-            sleep(1000);
-            System.out.println(wylosowana);
+            //sleep(1);
+           // System.out.println(wylosowana);
         }
 
     }
