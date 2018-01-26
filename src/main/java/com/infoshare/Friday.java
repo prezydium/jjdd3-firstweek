@@ -19,7 +19,7 @@ public class Friday {
 
     }
 
-
+    /*
     public boolean checkRepeatingChar(String s) {
         boolean flag = false;
         s = s.toLowerCase();
@@ -34,13 +34,32 @@ public class Friday {
                 } else {
                     flag = false;
                 }
-            } if (flag == true){
+            } if (flag){
                 break;
             }
             x++;
           }
 
         return flag;
+       }
+     */
+
+
+    public boolean checkRepeatingChar(String s) {
+        s = s.toLowerCase();
+        char[] chars = s.toCharArray();
+        int x = 1;
+
+        for (char a : chars) {
+            for (int i = 0; (i < chars.length) && (x < chars.length) ; i++) {
+                if (a == chars[x]) {
+                    return true;
+                }
+            }
+            x++;
+          }
+
+        return false;
     }
 
     public void exercise4(){
