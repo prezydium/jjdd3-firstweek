@@ -1,6 +1,6 @@
 package com.infoshare;
 
-public class MainMenu implements Menu{
+public class MainMenu extends AbstractMenu{
 
     Cities city;
     private int number;
@@ -92,15 +92,20 @@ public class MainMenu implements Menu{
         }
     }
 
+
+    @Override
     public void show() {
 
     }
 
+    @Override
     public void close() {
 
     }
 
+    @Override
     public void runOption(int option) {
 
     }
 }
+
