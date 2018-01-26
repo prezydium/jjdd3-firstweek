@@ -1,9 +1,7 @@
 package com.infoshare;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
-import static java.lang.Thread.interrupted;
 import static java.lang.Thread.sleep;
 
 public class MainCzwartek {
@@ -44,7 +42,8 @@ public class MainCzwartek {
 
         ((Lion) lion2).rawr(); // now he can
 
-
+        System.out.println(lion.hashCode());
+        System.out.println(mrowczak.hashCode());
 
 
 
@@ -288,8 +287,8 @@ public class MainCzwartek {
 
     public static void equalsTests() {
     /*
-        Menu menu3 = new Menu();
-        Menu menu4 = new Menu();
+        MainMenu menu3 = new MainMenu();
+        MainMenu menu4 = new MainMenu();
         System.out.println(menu3);
         System.out.println(menu4);
     */
@@ -317,11 +316,11 @@ public class MainCzwartek {
 
 
     public static void exercise1() {
-        Menu menu1 = new Menu();
+        MainMenu menu1 = new MainMenu();
         menu1.setNumber(-99);
         menu1.check(false, 5);
 
-        Menu menu2 = new Menu();
+        MainMenu menu2 = new MainMenu();
         menu2.setNumber(3);
         menu2.check(true, 3);
 

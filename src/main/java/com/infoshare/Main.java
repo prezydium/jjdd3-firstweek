@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
        // System.out.println("infoShareAcademy - Java SE");
 
-        Menu menu1 = new Menu();
+        MainMenu menu1 = new MainMenu();
         menu1.setNumber(1);
-        Menu menu2 = new Menu();
+        MainMenu menu2 = new MainMenu();
         menu2.setNumber(2);
         menu1.setCityByNumber();
         menu2.setCityByNumber();

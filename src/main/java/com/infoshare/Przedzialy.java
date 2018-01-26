@@ -21,7 +21,7 @@ public class Przedzialy {
         liczba = 3;
         a = zakres / iloscprzedzialow;
         System.out.println(a);
-        List<Integer> ranges = new ArrayList<>();
+        List<Integer> ranges = new ArrayList<Integer>();
     }
 }
 /*
