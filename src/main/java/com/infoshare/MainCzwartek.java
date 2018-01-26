@@ -20,8 +20,33 @@ public class MainCzwartek {
        // exercise.przedzialy();
         //personExercise();
        // lotto();
-        equalsExercise();
+        //equalsExercise();
+
+        stringBuilderExercise();
     }
+
+    public static void stringBuilderExercise(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("drzewo" + "#");
+        sb.append("kwiatek" + "#");
+        sb.append("plaża" + "#");
+        sb.append("blok" + "#");
+        sb.append("buty" + "#");
+        sb.append("costam" + "#");
+        sb.append("ksiazka" + "#");
+        sb.append("rower");
+        String slowa = sb.toString();
+        System.out.println(slowa);
+        String[] arrSlowa = slowa.split("#");
+        int ileSlow = 0;
+        for (String s: arrSlowa) {
+            System.out.println(s);
+            ileSlow++;
+        }
+        System.out.println(ileSlow);
+
+    }
+
 
 
     public static void equalsExercise(){
