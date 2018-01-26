@@ -30,7 +30,9 @@ public class MainCzwartek {
 
         //extendsExercise();
         Friday friday = new Friday();
-        friday.exercise1();
+       // friday.exercise1();
+        System.out.println("Czy powtarza się litera? - " + (friday.checkRepeatingChar("nr3gea")));
+
     }
     public void costam(){
         System.out.println("hi");
