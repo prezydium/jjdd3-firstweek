@@ -19,7 +19,7 @@ public class Lotto {
         zakres = sc.nextInt();
         System.out.println("Podaj ilość liczb do wylosowania: ");
         ilosc = sc.nextInt();
-        List<Integer> trafione = new ArrayList<>();
+        List<Integer> trafione = new ArrayList<Integer>();
         System.out.println("Następuje zwolnienie blokady i rozpoczynamy losowanie " + ilosc + " liczb");
 
         for(int i = 0; i < ilosc; i++){

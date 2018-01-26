@@ -19,8 +19,26 @@ public class MainCzwartek {
        // Przedzialy exercise = new Przedzialy();
        // exercise.przedzialy();
         //personExercise();
-        lotto();
+       // lotto();
+        equalsExercise();
     }
+
+
+    public static void equalsExercise(){
+        EqualsTest eqt1 = new EqualsTest(1, 25, "book","item");
+        EqualsTest eqt2 = new EqualsTest(1, 25, "book","item");
+        EqualsTest eqt3 = new EqualsTest(1, 25, "book","item");
+        EqualsTest eqt4 = new EqualsTest(2, 20, "pen","item");
+        /*
+        EqualsTest eqt2 = new EqualsTest(2, 4, "pen","item");
+        EqualsTest eqt3 = new EqualsTest(3, 502, "infoShare","school");
+        EqualsTest eqt4 = new EqualsTest(3, 100, "falowiec","building");
+        */
+        System.out.println(eqt1 == eqt4);
+        System.out.println(eqt1.equals(eqt4));
+
+    }
+
 
 
     public static void lotto() {
@@ -53,7 +71,7 @@ public class MainCzwartek {
         }
     }
 
-public static void pizzaExercise(){
+    public static void pizzaExercise(){
     Pizza pizzaMala = new Pizza(32, 19);
     Pizza pizzaDuza = new Pizza(65, 45.9);
 
@@ -61,7 +79,7 @@ public static void pizzaExercise(){
     System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
     System.out.println("Mniejsza wartość = lepiej!");
 
-}
+    }
 
 
 
@@ -160,12 +178,12 @@ public static void pizzaExercise(){
     }
 
     public static void equalsTests() {
-/*
+    /*
         Menu menu3 = new Menu();
         Menu menu4 = new Menu();
         System.out.println(menu3);
         System.out.println(menu4);
-*/
+    */
         String hello = "czesc";
 
         String goodbye = new String("czesc");
