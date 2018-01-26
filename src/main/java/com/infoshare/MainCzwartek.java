@@ -18,32 +18,62 @@ public class MainCzwartek {
         //binary();
         //pizzaExercise();
 
-       // Przedzialy exercise = new Przedzialy();
-       // exercise.przedzialy();
+        // Przedzialy exercise = new Przedzialy();
+        // exercise.przedzialy();
         //personExercise();
-       // lotto();
+        // lotto();
         //equalsExercise();
 
-       // stringBuilderExercise();
-        arrayExercise(10);
+        // stringBuilderExercise();
+        //arrayExercise(10);
+        mapExercise();
     }
 
-    public static void arrayExercise(int x){
+
+    public static void mapExercise() {
+
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 1;
+        Integer d = 4;
+
+        String s1 = "kot";
+        String s2 = "ptak";
+        String s3 = "smok";
+        String s4 = "smok";
+
+        Map<Integer, String> stworzonka = new HashMap<Integer, String>();
+        stworzonka.put(a, s1);
+        stworzonka.put(b, s2);
+        stworzonka.put(c, s3);
+        stworzonka.put(d, s4);
+
+        System.out.println(stworzonka.values());
+        System.out.println(stworzonka.keySet());
+
+        for (Map.Entry<Integer, String> e : stworzonka.entrySet()) {
+            System.out.println(e.getKey() + " : " + e.getValue());
+
+        }
+    }
+
+
+    public static void arrayExercise(int x) {
 
         int[] liczby = new int[x];
         int rand;
-        for (int i =0; i<x; i++){
+        for (int i = 0; i < x; i++) {
             rand = (int) (Math.random() * 100);
             liczby[i] = rand;
 
         }
-        for (int o: liczby) {
+        for (int o : liczby) {
             System.out.println(o);
         }
 
     }
 
-    public static void stringBuilderExercise(){
+    public static void stringBuilderExercise() {
         StringBuilder sb = new StringBuilder();
         sb.append("drzewo" + "#");
         sb.append("kwiatek" + "#");
@@ -57,7 +87,7 @@ public class MainCzwartek {
         System.out.println(slowa);
         String[] arrSlowa = slowa.split("#");
         int ileSlow = 0;
-        for (String s: arrSlowa) {
+        for (String s : arrSlowa) {
             System.out.println(s);
             ileSlow++;
         }
@@ -66,12 +96,11 @@ public class MainCzwartek {
     }
 
 
-
-    public static void equalsExercise(){
-        EqualsTest eqt1 = new EqualsTest(1, 25, "book","item");
-        EqualsTest eqt2 = new EqualsTest(1, 25, "book","item");
-        EqualsTest eqt3 = new EqualsTest(1, 25, "book","item");
-        EqualsTest eqt4 = new EqualsTest(2, 20, "pen","item");
+    public static void equalsExercise() {
+        EqualsTest eqt1 = new EqualsTest(1, 25, "book", "item");
+        EqualsTest eqt2 = new EqualsTest(1, 25, "book", "item");
+        EqualsTest eqt3 = new EqualsTest(1, 25, "book", "item");
+        EqualsTest eqt4 = new EqualsTest(2, 20, "pen", "item");
         /*
         EqualsTest eqt2 = new EqualsTest(2, 4, "pen","item");
         EqualsTest eqt3 = new EqualsTest(3, 502, "infoShare","school");
@@ -83,7 +112,6 @@ public class MainCzwartek {
     }
 
 
-
     public static void lotto() {
         Lotto lotto1 = new Lotto();
         try {
@@ -93,13 +121,13 @@ public class MainCzwartek {
         }
     }
 
-    public static void personExercise(){
+    public static void personExercise() {
         Person person1 = new Person("John", "Smith", "click");
         Person person2 = new Person("Zbigniew", "Brzęczyszczykiewicz", "Brzęczu");
         Person person3 = new Person("Anna", "Walik", "Val");
         Person person4 = new Person("James", "Bond", "007");
         Person person5 = new Person("Marie", "Ann", "Nix");
-        List<Person> people= new ArrayList<Person>();
+        List<Person> people = new ArrayList<Person>();
         people.add(person1);
         people.add(person2);
         people.add(person3);
@@ -109,25 +137,20 @@ public class MainCzwartek {
 
         Collections.sort(people);
 
-        for (Person p: people) {
+        for (Person p : people) {
             System.out.println(p);
         }
     }
 
-    public static void pizzaExercise(){
-    Pizza pizzaMala = new Pizza(32, 19);
-    Pizza pizzaDuza = new Pizza(65, 45.9);
+    public static void pizzaExercise() {
+        Pizza pizzaMala = new Pizza(32, 19);
+        Pizza pizzaDuza = new Pizza(65, 45.9);
 
-    System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
-    System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
-    System.out.println("Mniejsza wartość = lepiej!");
+        System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
+        System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
+        System.out.println("Mniejsza wartość = lepiej!");
 
     }
-
-
-
-
-
 
 
     public static void binary() {
