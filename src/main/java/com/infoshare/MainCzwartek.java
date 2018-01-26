@@ -1,7 +1,9 @@
 package com.infoshare;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
+import static java.lang.Thread.interrupted;
 import static java.lang.Thread.sleep;
 
 public class MainCzwartek {
@@ -22,7 +24,23 @@ public class MainCzwartek {
        // lotto();
         //equalsExercise();
 
-        stringBuilderExercise();
+       // stringBuilderExercise();
+        arrayExercise(10);
+    }
+
+    public static void arrayExercise(int x){
+
+        int[] liczby = new int[x];
+        int rand;
+        for (int i =0; i<x; i++){
+            rand = (int) (Math.random() * 100);
+            liczby[i] = rand;
+
+        }
+        for (int o: liczby) {
+            System.out.println(o);
+        }
+
     }
 
     public static void stringBuilderExercise(){
