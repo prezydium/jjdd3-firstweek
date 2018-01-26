@@ -27,7 +27,27 @@ public class MainCzwartek {
         // stringBuilderExercise();
         //arrayExercise(10);
         //mapExercise();
-        exceptionsExercise();
+        //exceptionsExercise();
+        extendsExercise();
+    }
+
+    public static void extendsExercise(){
+
+        Ant mrowczak = new Ant();
+        Animal mrow = new Ant();
+        Lion lion = new Lion();
+        Animal lion2 = new Lion();
+        lion.eat();
+        mrowczak.sleep();
+        mrow.eat();
+        lion2.eat(); // lion2 can't rawr :(
+
+        ((Lion) lion2).rawr(); // now he can
+
+
+
+
+
     }
 
     public static void exceptionsExercise(){
