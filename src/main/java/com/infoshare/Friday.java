@@ -42,4 +42,12 @@ public class Friday {
 
         return flag;
     }
+
+    public void exercise4(){
+
+        Developer dev1 = new Developer();
+        dev1.setName("Krzysiek");
+        dev1.showInfo();
+    }
+
 }
