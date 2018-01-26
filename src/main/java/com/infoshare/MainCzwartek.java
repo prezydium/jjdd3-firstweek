@@ -26,7 +26,30 @@ public class MainCzwartek {
 
         // stringBuilderExercise();
         //arrayExercise(10);
-        mapExercise();
+        //mapExercise();
+        exceptionsExercise();
+    }
+
+    public static void exceptionsExercise(){
+        int[] table = new int[10];
+        int rand;
+        for (int i = 0; i<10; i++){
+            rand = (int) (Math.random() * 100);
+            table[i] = rand;
+             }
+
+        try {
+            System.out.println(table[15]);
+        } catch (Exception e){
+            e.printStackTrace();
+            System.out.println("zły index");
+        }
+
+        for (int a: table) {
+            System.out.print(a + " ");
+        }
+
+
     }
 
 
@@ -118,7 +141,7 @@ public class MainCzwartek {
             lotto1.nastepujeZwolnienieBlokady();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+            }
     }
 
     public static void personExercise() {
@@ -273,7 +296,7 @@ public class MainCzwartek {
     }
 
 
-   /* public static void exercise1() {
+    public static void exercise1() {
         Menu menu1 = new Menu();
         menu1.setNumber(-99);
         menu1.check(false, 5);
@@ -290,6 +313,5 @@ public class MainCzwartek {
         menu1.check(true, 10);
         System.out.println("menu1 number: " + menu1.getNumber());
     }
-*/
 
 }
