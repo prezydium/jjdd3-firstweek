@@ -18,7 +18,18 @@ public class MainCzwartek {
 
        // Przedzialy exercise = new Przedzialy();
        // exercise.przedzialy();
-        personExercise();
+        //personExercise();
+        lotto();
+    }
+
+
+    public static void lotto() {
+        Lotto lotto1 = new Lotto();
+        try {
+            lotto1.nastepujeZwolnienieBlokady();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void personExercise(){
@@ -43,12 +54,12 @@ public class MainCzwartek {
     }
 
 public static void pizzaExercise(){
-     Pizza pizzaMala = new Pizza(32, 19);
+    Pizza pizzaMala = new Pizza(32, 19);
     Pizza pizzaDuza = new Pizza(65, 45.9);
 
     System.out.println("Opłacalność małej: " + pizzaMala.whatsBetter());
     System.out.println("Opłacalność dużej: " + pizzaDuza.whatsBetter());
-      System.out.println("Mniejsza wartość = lepiej!");
+    System.out.println("Mniejsza wartość = lepiej!");
 
 }
 
